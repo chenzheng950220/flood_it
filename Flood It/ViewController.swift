@@ -98,6 +98,10 @@ class ViewController: UIViewController {
             gridArr[c*size+r].backgroundColor = UIColor.greenColor();
         }
     }
+    
+    override func viewDidLoad() {
+        SizeText.clearsOnBeginEditing = true;
+    }
 
 }
 
