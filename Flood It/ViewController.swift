@@ -99,6 +99,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // After view loaded, enable clearsOnBeginEditing to make text disappear when user start editing
     override func viewDidLoad() {
         SizeText.clearsOnBeginEditing = true;
     }
