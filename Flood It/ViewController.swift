@@ -73,6 +73,9 @@ class ViewController: UIViewController {
             c!.change(digit);
             --c!.move_left;
         }
+        else {
+            return;
+        }
         if (c!.isWon() == true) {
             GameStatus.text = "You win!";
             inGame = false;
