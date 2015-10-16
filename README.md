@@ -12,6 +12,7 @@ Oct, 16, 2015
 2. Fix the issue that keyboard cannot hide itself when game begins.  
 3. Fix the issue when reload game with different size of grids would cause display error.  
 4. Fix the error that hit colour buttons before game is running causes crash.  
+5. BTW, .ipa file added, in case that you feel this app is so awesome and you cannot wait installing it on your phone.  </br> </br>
   
 
   
