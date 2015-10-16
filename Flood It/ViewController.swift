@@ -30,6 +30,12 @@ class ViewController: UIViewController {
     
     // Start the game by this button
     @IBAction func StartButton(sender: UIButton) {
+        // Hide the keyboard and clear the display once game started.
+        SizeText.resignFirstResponder();
+        for var i=gridArr.count-1; i >= 0; --i {
+            gridArr[i].removeFromSuperview();
+            gridArr.popLast();
+        }
         //Reading number from input and init Controller&textDisplay
         let sizeNumberHelper = NSNumberFormatter().numberFromString(SizeText.text!);
         if (sizeNumberHelper == nil) {
@@ -73,7 +79,13 @@ class ViewController: UIViewController {
         }
         else if (c!.move_left == 0) {
             GameStatus.text = "Game Over!";
-            inGame = false;
+            // Give alerts to user and let user determine whether they want more steps
+            let alert = UIAlertController(title: "Oopps, You lost!", message: "Do you want some more steps?", preferredStyle: UIAlertControllerStyle.Alert);
+            // End the game is "No" got chosen.
+            alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.Default, handler: {(no_alert: UIAlertAction!) in self.inGame=false}));
+            // Give 2 more moves once "Yes" got chosen
+            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in self.c!.move_left=2; self.GameStatus.text="2 more moves are given!"}));
+            self.presentViewController(alert, animated: true, completion: nil);
         }
         else {
             GameStatus.text = "\(c!.move_left) moves left!";
