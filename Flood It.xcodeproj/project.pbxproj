@@ -54,6 +54,8 @@
 		0F352B991BAC978700259B63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F352BA51BAC97A600259B63 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = "Flood It/View.swift"; sourceTree = "<group>"; };
 		0F352BA71BAC97B000259B63 /* TextDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TextDisplay.swift; path = "Flood It/TextDisplay.swift"; sourceTree = "<group>"; };
+		0F9BE3C81BD08C8300FE49B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		0F9BE3C91BD08C8300FE49B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0FB90F3D1BACA4F400EFADB1 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = "Flood It/Cell.swift"; sourceTree = "<group>"; };
 		0FB90F3F1BACA55800EFADB1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = "Flood It/Game.swift"; sourceTree = "<group>"; };
 		0FB90F431BB0A1C200EFADB1 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
@@ -325,6 +327,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F352B7C1BAC978600259B63 /* Base */,
+				0F9BE3C81BD08C8300FE49B0 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			path = "Flood It";
@@ -334,6 +337,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				0F352B811BAC978600259B63 /* Base */,
+				0F9BE3C91BD08C8300FE49B0 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			path = "Flood It";

@@ -42,6 +42,13 @@ class ViewController: UIViewController {
             return;
         }
         let sizeNumber = sizeNumberHelper!.integerValue;
+        // Stop the game if entered size is too big
+        if (sizeNumber > 100) {
+            let size_too_big_alert = UIAlertController(title: "Size too big", message: "Please enter a smaller number and try again!", preferredStyle: UIAlertControllerStyle.Alert);
+            size_too_big_alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil));
+            self.presentViewController(size_too_big_alert, animated: true, completion: nil);
+            return;
+        }
         inGame = true;
         size = sizeNumber;
         c = Controller();
@@ -81,14 +88,14 @@ class ViewController: UIViewController {
             inGame = false;
         }
         else if (c!.move_left == 0) {
-            GameStatus.text = "Game Over!";
+            GameStatus.text = "Game over!";
             // Give alerts to user and let user determine whether they want more steps
-            let alert = UIAlertController(title: "Oopps, You lost!", message: "Do you want some more steps?", preferredStyle: UIAlertControllerStyle.Alert);
+            let lost_alert = UIAlertController(title: "Oopps, You lost!", message: "Do you want some more steps?", preferredStyle: UIAlertControllerStyle.Alert);
             // End the game is "No" got chosen.
-            alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.Default, handler: {(no_alert: UIAlertAction!) in self.inGame=false}));
+            lost_alert.addAction(UIAlertAction(title: "No", style: UIAlertActionStyle.Default, handler: {(no_alert: UIAlertAction!) in self.inGame=false}));
             // Give 2 more moves once "Yes" got chosen
-            alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in self.c!.move_left=2; self.GameStatus.text="2 more moves are given!"}));
-            self.presentViewController(alert, animated: true, completion: nil);
+            lost_alert.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.Default, handler: {(alert: UIAlertAction!) in self.c!.move_left=2; self.GameStatus.text="2 more moves are given!"}));
+            self.presentViewController(lost_alert, animated: true, completion: nil);
         }
         else {
             GameStatus.text = "\(c!.move_left) moves left!";

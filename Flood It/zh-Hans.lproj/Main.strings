@@ -1,0 +1,27 @@
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "1Yo-ja-pr2"; */
+"1Yo-ja-pr2.normalTitle" = "开始游戏";
+
+/* Class = "UIButton"; normalTitle = "1"; ObjectID = "62R-pV-wgC"; */
+"62R-pV-wgC.normalTitle" = "1";
+
+/* Class = "UITextField"; text = "Enter size here"; ObjectID = "NfQ-Us-Ycn"; */
+"NfQ-Us-Ycn.text" = "输入大小";
+
+/* Class = "UILabel"; text = "Welcome to FloodIt!"; ObjectID = "OSu-wp-hdg"; */
+"OSu-wp-hdg.text" = "欢迎进入 FloodIt!";
+
+/* Class = "UIButton"; normalTitle = "0"; ObjectID = "eiz-ii-6fz"; */
+"eiz-ii-6fz.normalTitle" = "0";
+
+/* Class = "UIButton"; normalTitle = "2"; ObjectID = "l6C-Vs-8Eo"; */
+"l6C-Vs-8Eo.normalTitle" = "2";
+
+/* Class = "UIButton"; normalTitle = "4"; ObjectID = "qtA-On-McF"; */
+"qtA-On-McF.normalTitle" = "4";
+
+/* Class = "UIButton"; normalTitle = "3"; ObjectID = "vSH-HB-F48"; */
+"vSH-HB-F48.normalTitle" = "3";
+
+
+
