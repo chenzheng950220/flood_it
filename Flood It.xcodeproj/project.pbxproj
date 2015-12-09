@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F21AD481C18CB8000FFDD6E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F21AD471C18CB8000FFDD6E /* Controller.swift */; };
 		0F352B781BAC978600259B63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352B771BAC978600259B63 /* AppDelegate.swift */; };
 		0F352B7A1BAC978600259B63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352B791BAC978600259B63 /* ViewController.swift */; };
 		0F352B7D1BAC978600259B63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F352B7B1BAC978600259B63 /* Main.storyboard */; };
@@ -14,11 +15,10 @@
 		0F352B821BAC978600259B63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F352B801BAC978600259B63 /* LaunchScreen.storyboard */; };
 		0F352B8D1BAC978700259B63 /* Flood_ItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352B8C1BAC978700259B63 /* Flood_ItTests.swift */; };
 		0F352B981BAC978700259B63 /* Flood_ItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352B971BAC978700259B63 /* Flood_ItUITests.swift */; };
-		0F352BA61BAC97A600259B63 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352BA51BAC97A600259B63 /* View.swift */; settings = {ASSET_TAGS = (); }; };
-		0F352BA81BAC97B000259B63 /* TextDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352BA71BAC97B000259B63 /* TextDisplay.swift */; settings = {ASSET_TAGS = (); }; };
-		0FB90F3E1BACA4F400EFADB1 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB90F3D1BACA4F400EFADB1 /* Cell.swift */; settings = {ASSET_TAGS = (); }; };
-		0FB90F401BACA55800EFADB1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB90F3F1BACA55800EFADB1 /* Game.swift */; settings = {ASSET_TAGS = (); }; };
-		0FB90F441BB0A1C200EFADB1 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB90F431BB0A1C200EFADB1 /* Controller.swift */; settings = {ASSET_TAGS = (); }; };
+		0F352BA61BAC97A600259B63 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352BA51BAC97A600259B63 /* View.swift */; };
+		0F352BA81BAC97B000259B63 /* TextDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352BA71BAC97B000259B63 /* TextDisplay.swift */; };
+		0FB90F3E1BACA4F400EFADB1 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB90F3D1BACA4F400EFADB1 /* Cell.swift */; };
+		0FB90F401BACA55800EFADB1 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB90F3F1BACA55800EFADB1 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F21AD471C18CB8000FFDD6E /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = "Flood It/Controller.swift"; sourceTree = "<group>"; };
+		0F35232E1BE7ED5D0059B64A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		0F352B741BAC978600259B63 /* Flood It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flood It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F352B771BAC978600259B63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "Flood It/AppDelegate.swift"; sourceTree = "<group>"; };
 		0F352B791BAC978600259B63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Flood It/ViewController.swift"; sourceTree = "<group>"; };
@@ -58,7 +60,6 @@
 		0F9BE3C91BD08C8300FE49B0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		0FB90F3D1BACA4F400EFADB1 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = "Flood It/Cell.swift"; sourceTree = "<group>"; };
 		0FB90F3F1BACA55800EFADB1 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Game.swift; path = "Flood It/Game.swift"; sourceTree = "<group>"; };
-		0FB90F431BB0A1C200EFADB1 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,13 +90,12 @@
 		0F352B6B1BAC978600259B63 = {
 			isa = PBXGroup;
 			children = (
-				0F352B761BAC978600259B63 /* Flood It */,
-				0FB90F3C1BACA4D700EFADB1 /* Source Code */,
+				0FB90F3C1BACA4D700EFADB1 /* Game Engine */,
 				0F352B8B1BAC978700259B63 /* Flood ItTests */,
 				0F352B961BAC978700259B63 /* Flood ItUITests */,
 				0F352B751BAC978600259B63 /* Products */,
+				0F4F24B01BE276B000B5AC49 /* Game Engine Config */,
 				0F352B7B1BAC978600259B63 /* Main.storyboard */,
-				0F352B771BAC978600259B63 /* AppDelegate.swift */,
 				0F352B7E1BAC978600259B63 /* Assets.xcassets */,
 				0F352B801BAC978600259B63 /* LaunchScreen.storyboard */,
 				0F352B831BAC978600259B63 /* Info.plist */,
@@ -110,13 +110,6 @@
 				0F352B931BAC978700259B63 /* Flood ItUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0F352B761BAC978600259B63 /* Flood It */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Flood It";
 			sourceTree = "<group>";
 		};
 		0F352B8B1BAC978700259B63 /* Flood ItTests */ = {
@@ -137,17 +130,25 @@
 			path = "Flood ItUITests";
 			sourceTree = "<group>";
 		};
-		0FB90F3C1BACA4D700EFADB1 /* Source Code */ = {
+		0F4F24B01BE276B000B5AC49 /* Game Engine Config */ = {
 			isa = PBXGroup;
 			children = (
+				0F352B771BAC978600259B63 /* AppDelegate.swift */,
+			);
+			name = "Game Engine Config";
+			sourceTree = "<group>";
+		};
+		0FB90F3C1BACA4D700EFADB1 /* Game Engine */ = {
+			isa = PBXGroup;
+			children = (
+				0F21AD471C18CB8000FFDD6E /* Controller.swift */,
 				0F352B791BAC978600259B63 /* ViewController.swift */,
-				0FB90F431BB0A1C200EFADB1 /* Controller.swift */,
 				0FB90F3F1BACA55800EFADB1 /* Game.swift */,
 				0FB90F3D1BACA4F400EFADB1 /* Cell.swift */,
 				0F352BA51BAC97A600259B63 /* View.swift */,
 				0F352BA71BAC97B000259B63 /* TextDisplay.swift */,
 			);
-			name = "Source Code";
+			name = "Game Engine";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,7 +288,7 @@
 				0FB90F3E1BACA4F400EFADB1 /* Cell.swift in Sources */,
 				0F352BA61BAC97A600259B63 /* View.swift in Sources */,
 				0F352BA81BAC97B000259B63 /* TextDisplay.swift in Sources */,
-				0FB90F441BB0A1C200EFADB1 /* Controller.swift in Sources */,
+				0F21AD481C18CB8000FFDD6E /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +329,7 @@
 			children = (
 				0F352B7C1BAC978600259B63 /* Base */,
 				0F9BE3C81BD08C8300FE49B0 /* zh-Hans */,
+				0F35232E1BE7ED5D0059B64A /* en */,
 			);
 			name = Main.storyboard;
 			path = "Flood It";
